@@ -1,0 +1,19 @@
+set -U fish_greeting
+
+### Config Alias
+alias confish='nvim ~/.config/fish/config.fish'
+alias conftux='nvim ~/.config/tmux/tmux.conf'
+### Tools Alias
+
+
+### Jump to Folder
+alias dev='cd ~/WebDev/Git/ && ll'
+
+### BUN.JS
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
+eval "$(/opt/homebrew/bin/brew shellenv)"
